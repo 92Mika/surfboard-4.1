@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 768px){
+        padding: rem(26px) rem(36px) rem(25px) rem(30px);
+        background: #196881;
+        height: 90px;
+    }
+} 
+
+.phone-number.header__phone-number{
+    margin-right: rem(-30px);
+    margin-top: rem(5px);
+    @include tablets{
+        display: none;
+    }
+}
+
+.phone-number{
+    font-size: rem(22px);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.phone-number__icon{
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.phone-number__icon-elem{
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(6px); 
+}
+
+.phone-number__text{
+    display: flex;
+    white-space: nowrap;
+}

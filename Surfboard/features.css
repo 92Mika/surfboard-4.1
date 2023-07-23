@@ -1,0 +1,12 @@
+.features {
+  display: flex;
+  font-weight: 700;
+  margin-left: rem(3px);
+}
+
+.features__item {
+  margin-right: rem(44px);
+}
+.features__item:last-child {
+  margin-right: rem(0px);
+}/*# sourceMappingURL=features.css.map */

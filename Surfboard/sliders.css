@@ -1,0 +1,32 @@
+.slides__display{
+  background: #f8faf9;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider{
+  display: flex;
+  width: 300px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.items{
+  display: flex;
+  position: relative;
+  color: #444;
+  font-size: 30px;
+  right: 0;
+  transition: right .3s;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: papayawhip;
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #444;
+}

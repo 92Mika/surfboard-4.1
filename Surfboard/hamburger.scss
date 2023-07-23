@@ -1,0 +1,135 @@
+.burger{
+
+  @include tablets{
+    display: inline-flex;
+    right: rem(26px);
+    position: fixed; 
+    top: rem(20px);
+    right: 10%;
+    height: rem(25px);
+    width: rem(40px);
+    cursor:pointer;
+    z-index: 15;
+    transition:all .4s;
+        
+    &__line{
+      width: 100%;
+      height: rem(2px);
+      position: absolute;
+      background-color: #fff;
+      top:rem(0px);
+      left: rem(0px);
+      transition:all .4s;
+  
+      
+      &:nth-child(2){
+        top:50%;
+        transform:translateY(-50%);
+      }
+      
+      &:nth-child(3){
+        bottom:rem(0px);
+        top:initial;
+      }
+
+    }
+  }
+}
+  
+  .content{
+    display: none;
+    @include tablets{
+    background-color: black;
+    background: #196881;
+    opacity: .8;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+    &__title{
+      color:#fff;
+      font-size: rem(40px);
+      text-transform: uppercase;
+    }
+    }
+  }
+  
+  .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transition:all .4s;
+    
+    position:fixed;
+    top:rem(0px);
+    left:100%;
+    opacity:0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  .menu{
+      &__item{
+      margin-bottom:rem(20px);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      
+      &:after{
+        content:'';
+        display: inline-block;
+        background-color: #fff;
+        border-radius:50%;
+        margin-top:rem(10px);
+        text-decoration: none;
+      }
+      
+      &:last-child{
+        margin-bottom:rem(0px);
+                
+        &:after{
+          display:none;
+        }
+      }
+    }
+    
+    &__link{
+      &:hover{
+        opacity:.7;
+      }
+    }
+  }
+  
+  .burger--active{
+    .burger__line{
+      &:nth-child(1){
+        opacity:0;
+      }
+      
+      &:nth-child(2){
+        transform:rotate(45deg);
+      }
+      
+      &:nth-child(3){
+        transform:rotate(-45deg) translateY(-8px) translateX(5px);
+      }
+    }
+  }
+  .menu__link{
+    text-decoration: none;
+  }
+
+  .overlay--active{
+    left: rem(0px);
+    opacity:1;
+  }
+  
+  .body--active-menu{
+    overflow:hidden;
+  }

@@ -1,0 +1,199 @@
+.map-section{
+    background: url("./img/decor/map.png")center no-repeat;
+    background-size: cover;
+}
+
+.footer{
+    position: absolute;
+    bottom: rem(0px);
+    left: rem(0px);
+    right: rem(0px);
+    padding: rem(25px 0px);
+    background: #fff;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones{
+        flex-direction: column;
+    }
+}
+
+.socials__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: rem(6px);
+    &:last-child{
+    margin-right: rem(0px);
+    }
+}
+
+.socials__link{
+    display: block;
+    text-decoration: none;
+    
+    background: center center no-repeat;
+}
+
+.socials__item--icon--vk .socials__link{
+    padding: rem(10px);
+    border-radius: 50%;
+    position: relative;
+}
+
+.socials__item--icon--vk .socials__link:hover::before{
+    opacity: 1;
+}
+
+.socials__item--icon--vk .socials__link:hover::after{
+    opacity: 0;
+}
+
+.socials__item--icon--vk .socials__link:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(20px);
+    height: rem(20px);
+    background: url("./img/icons/css_sprites gr.png")-10px -10px;
+}
+
+.socials__item--icon--vk .socials__link::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(20px);
+    height: rem(20px);
+    background: url("./img/icons/css_sprites bl.png")-10px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.socials__item--icon--fb .socials__link{
+    padding: rem(10px);
+    border-radius: 50%;
+    position: relative;
+}
+
+.socials__item--icon--fb .socials__link:hover::before{
+    opacity: 1;
+}
+
+.socials__item--icon--fb .socials__link:hover::after{
+    opacity: 0;
+}
+
+.socials__item--icon--fb .socials__link:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(20px);
+    height: rem(20px);
+    background: url("./img/icons/css_sprites gr.png") -50px -10px;
+}
+
+.socials__item--icon--fb .socials__link:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(20px);
+    height: rem(20px);
+    background: url("./img/icons/css_sprites bl.png") -50px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.socials__item--icon--insta .socials__link{
+    padding: rem(10px);
+    border-radius: 50%;
+    position: relative;
+}
+  
+.socials__item--icon--insta .socials__link:hover::before{
+    opacity: 1;
+}
+
+.socials__item--icon--insta .socials__link:hover::after{
+    opacity: 0;
+}
+
+.socials__item--icon--insta .socials__link:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(20px);
+    height: rem(20px);
+    background: url("./img/icons/css_sprites gr.png")  -90px -10px;
+}
+
+.socials__item--icon--insta .socials__link:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(20px);
+    height: 20px;
+    background: url("./img/icons/css_sprites bl.png")-90px -10px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.socials__item--icon--twitter .socials__link{
+    padding: rem(10px);
+    border-radius: 50%;
+    position: relative;
+}
+
+.socials__item--icon--twitter .socials__link:hover::before{
+    opacity: 1;
+}
+
+.socials__item--icon--twitter .socials__link:hover::after{
+    opacity: 0;
+}
+
+.socials__item--icon--twitter .socials__link:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(20px);
+    height: rem(20px);
+    background: url("./img/icons/css_sprites gr.png") -130px -10px;
+}
+
+.socials__item--icon--twitter .socials__link:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: rem(20px);
+    height: rem(20px);
+    background: url("./img/icons/css_sprites bl.png") -130px -10px;
+    opacity: 0;
+    transition: .3s;
+}
